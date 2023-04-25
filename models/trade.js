@@ -15,6 +15,8 @@ const tradeSchema = new Schema({
 {timestamps: true}
 );
 
+//Some change
+
 module.exports = mongoose.model('trade', tradeSchema);
 
 
