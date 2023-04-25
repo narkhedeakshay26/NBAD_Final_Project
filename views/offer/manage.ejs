@@ -1,0 +1,27 @@
+<%- include('../partials/header.ejs')%>
+<main class="main-content2">
+    <div class="box-main2">
+
+    <% if(trade1 && trade2) { %>
+    <h3><%=trade1.name %></h3></br> 
+    <img src="<%=trade1.image%>" alt="preview image" width="270" height="180">
+    <h3 class="textfont"><%=trade2.name %></h3></br> 
+    <img src="<%=trade2.image%>" alt="preview image" width="270" height="180">                       
+    <form> 
+    <% if(user.isOfferInitiator){ %>
+    </br>
+        <button class="button delete-btn" type="submit"  formmethod = "POST" formaction = "/trades/<%=offerTrade.id%>/cancelOffer?_method=DELETE">Cancel Offer</button>
+    <% } else { %>
+    </br>
+        <button class="button update-btn" type="submit" formmethod="POST" formaction="/trades/<%=offerTrade.id%>/acceptOffer?_method=PUT"> Accept</button> &nbsp; &nbsp;
+        <button class="button delete-btn" type="submit"  formmethod="POST" formaction="/trades/<%=offerTrade.id%>/rejectOffer?_method=DELETE">Reject</button>  
+    <%}%>
+    </form>
+
+    <% } else { %>
+    <p class="textfont"> You haven't selected any trades to trade</p>
+    <%}%>
+
+    </div>
+</main> 
+<%- include('../partials/footer.ejs')%>

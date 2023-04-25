@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/85cbb384b5.js" crossorigin="anonymous"></script>
+    <title>Gaming Mart</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body style="background-color:#c07fe1;">
+      <nav class="navbar">
+       	<div>
+          <a href="/"><img src="/images/logo.jpeg" width="200" height="100" alt=""/></a>
+       	  <ul>
+            
+            <% if(!user){ %>
+                <li><a href='/users/new'>Sign up</a></li>
+                <li><a href='/users/login'>Login</a></li>
+            <% } else { %>
+                <li><a href='/trades/new'>Start Trading</a></li>
+                <li><a href='/users/profile'>Profile</a></li>
+                <li><a href='/users/logout'>Logout</a></li>
+            <% } %> 
+          </ul>
+       </div>	           
+      </nav>
+<nav class="trades">
+    <ul>
+       <li><a href='/trades'>Trades</a></li>
+</ul>
+</nav> 
+
+<% if(errorMessages.length > 0) {%>
+    <% errorMessages.forEach(message=>{%>
+        <div class='error'>
+            <%=message%>
+        </div>
+    <%});%>
+<%}%>
+
+<% if(successMessages.length > 0) {%>
+    <% successMessages.forEach(message=>{%>
+        <div class='success'>
+            <%=message%>
+        </div>
+    <%});%>
+<%}%>
+
+<!-- <% if(firstName && lastName){ %>
+    <h2>Welcome <%= firstName+' '+lastName %> !!</h2>
+        <% } %>   -->
+
+            
+
+ 

@@ -1,0 +1,26 @@
+<%- include('../partials/header.ejs') %>
+<div class="content">
+    <div class="center-container">
+        <form action = '/trades' method = 'POST' class="mt-20">
+
+            <label for="topic">Topic</label><br>
+            <input type="text" id="topic" name="topic" placeholder="Enter topic..">
+            <br>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter name..">
+
+            <label for="details">Detail</label>
+            <textarea id="details" name="details" placeholder="Enter detail.."></textarea>
+            
+            <label for="status">Status</label>
+            <textarea id="status" name="status" placeholder="Enter status.."></textarea>
+           
+
+            <label for="image">Image URL</label>
+            <input type="url" id="image" name="image" placeholder="Enter image url..">
+        
+            <button class="button submit-btn mb-100">Create trade</button>
+        </form>
+    </div>
+</div>
+<%- include('../partials/footer.ejs') %>

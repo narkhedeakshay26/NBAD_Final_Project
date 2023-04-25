@@ -1,0 +1,261 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(0, 10, 10);
+   color: white;
+   text-align: center;
+   margin: 8px;
+}
+
+.footer_logo {
+float:right;
+  list-style: none; 
+  margin: 20px 20px;;
+}
+      
+.footer li {
+float:left;
+list-style: none; 
+margin: 13px 20px;
+}
+
+.footer li a{
+          padding: 3px 3px;
+          text-decoration: none;
+          color: white;
+      }
+
+.navbar{
+  background-color: rgb(0, 12, 12);
+}
+
+
+.navbar li{
+          float:right;
+          list-style: none; 
+          margin: 15px 20px;
+      }
+     
+.navbar ul{
+          overflow: auto;
+      }
+      
+.navbar li a{
+          padding: 3px 3px;
+          text-decoration: none;
+          color: white;
+      }
+
+.trades{
+  background-color: rgb(11, 16, 16);
+}
+   
+     
+.trades ul{
+          overflow: auto;
+      }
+      
+.trades li a{
+          padding: 8px 8px;
+          text-decoration: none;
+          color: white;
+      }
+      
+            
+      
+.navbar li a:hover{
+  color: red
+}
+
+
+.content p {
+align: center; 
+font-size: 35px;
+color: #6a7199;
+}
+
+.content{
+margin-left: 25%;
+margin-top: 5%;
+}
+
+.tradepage p {
+font-size: 40px;
+color: #6a7199;
+}
+
+.tradepage{
+margin-left: 5%;
+margin-top: 5%;
+}
+
+.bullets_ce p {
+font-size: 20px;
+color: #6a7199;
+} 
+
+.bullets_ce{
+margin-left: 5%;
+margin-top: 1%;
+}
+
+.bullets_vas p {
+font-size: 20px;
+color: #6a7199;
+} 
+
+.bullets_vas{
+margin-left: 5%;
+margin-top: 1%;
+}
+
+.bullets_ce_details p {
+font-size: 20px;
+color: #6a7199;
+} 
+
+.bullets_ce_details{
+margin-left: 5%;
+margin-top: 2%;
+float: left;
+}
+
+.center {
+display: block;
+margin-top: 10%;
+margin-left: 40%;
+margin-right: 7%;
+width: 20%;
+}
+
+.preview-image {
+  height: 200px;
+  width: 200px;
+}
+
+.image1 {
+text-align: left;
+margin-top: 3%;
+margin-left: 5%;
+margin-right: 7%;
+width: 2%;
+height: 10%;
+}
+
+.gamemeter {
+margin-left: 5%;
+margin-top: 2%;
+font-weight: bold;
+font-size: 25px;
+}
+
+.edit {
+  margin-left: 5%;
+  margin-top: 0%;
+  font-weight: bold;
+  font-size: 20px;
+  }
+
+.rate {
+margin-left: 70%;
+margin-top: 0%;
+font-size: 15px;
+}
+
+
+form.form-example {
+  display: table;
+  
+}
+
+div.form-example {
+  display: table-row;
+}
+
+label, input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+label {
+  padding-right: 50px;
+}
+
+.p {
+align:center;
+}
+
+.trading {
+text-align: right; 
+margin-right:50%; 
+width: 400px;  
+height: 200px;  
+padding-top: 25px; 
+padding-left: 615px;
+}
+
+.m-60{
+margin: 40px;
+}
+
+.event-heading h{
+  display: inline-block;
+}
+.dis-in-bl{
+  display: inline-block;
+}
+
+button {
+background-color:cadetblue;
+color:white;
+padding: 6px 10px;
+}
+
+.update-btn {
+  background-color: #008CBA;
+} 
+.delete-btn {
+  background-color: #f44336;
+}
+
+.center-container{
+  width: 80%;
+  background-color:#f6f6f6;
+  padding: 8px 12px;
+  margin: 20px auto;
+}
+
+.user-table td {
+  padding: 5px;
+}
+.profile-table thead {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+
+.main-content2 {
+  background-color: #fcf8e3;
+  height: 633.5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box-main2 {
+  color: black;
+  margin-left: 7%;
+}
+
+.listing {
+  padding: 10px;
+}

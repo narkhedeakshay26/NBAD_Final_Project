@@ -1,0 +1,34 @@
+<%- include('../partials/header.ejs') %>
+                <nav class="gamemeter"><p><%= trade.name %></p> 
+                    <% if(user == trade.host._id) { %>
+                <form>
+                    <button class="button update-btn" type="submit" formmethod="GET" formaction="/trades/<%= trade.id %>/edit">Edit</button>
+                    <button class="button delete-btn" type="submit" formmethod="POST" formaction="/trades/<%= trade.id %>?_method=DELETE">Delete</button>
+                </form>
+                <% } %>
+            </nav>
+                    
+                    <div class="image1"> 
+                      <img src="<%= trade.image %>" width="300" height="200" alt="Game">
+                     </div>
+            <nav class="bullets_ce_details">
+                <h5>Details</h5>
+            <h6><%= trade.details %></h6>
+            <h5>Status</h5>
+            <h6><%= trade.status %></h6>
+            </nav>
+
+                <nav class="rate">
+                    <% if(user != trade.host._id) { %>
+                <p>Are you interested in this purchase?</p>
+                <form> 
+                    <% if(trade.status === 'Available' || trade.status === 'Traded') { %>
+                      <button class="button update-btn" type="submit" formmethod = "GET" formaction = "/trades/<%=trade.id%>/trade">Trade</button>
+                      <%}%>
+                    <button class="button delete-btn" type="submit"  formmethod = "POST" formaction = "/trades/<%=trade.id%>/watch">Watch</button>
+                    </form>
+                    <%}%>
+              
+                </nav>
+            
+<%- include('../partials/footer.ejs') %>
